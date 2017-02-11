@@ -2,8 +2,8 @@
   "name": "A browser action which calls pandler protocol",
   "description": "Call pandler protocol when this icon is clicked",
   "version": "1.0",
-  "icons": { "16": "pandler-16.png",
-          "128": "pandler-128.png" },
+  "icons": { "16": "images/16x16.png",
+          "128": "images/128x128.png" },
   "permissions": [
     "contextMenus"
   ],
@@ -14,5 +14,8 @@
       "js": ["content_scripts.js"],
       "run_at": "document_end"
     }
+  ],
+  "web_accessible_resources": [
+    "images/pandler.svg"
   ]
 }
